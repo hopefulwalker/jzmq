@@ -1,0 +1,64 @@
+﻿生成启动时间为 2017/4/24 22:47:27。
+     1>项目“D:\works\open\jzmq\jzmq20170423\jzmq-jni\builds\msvc\jzmq\jzmq.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>PreBuildEvent:
+         
+                   copy ..\config.hpp "..\..\..\src\main\c++\"
+                   javac ..\..\..\src\main\java\org\zeromq\ZMQ.java ..\..\..\src\main\java\org\zeromq\ZMQException.java ..\..\..\src\main\java\org\zeromq\EmbeddedLibraryTools.java ..\..\..\src\main\java\org\zeromq\App.java
+               
+         :VCEnd
+         已复制         1 个文件。
+       CustomBuild:
+         Generating JNI header
+         Generating JNI header
+         Generating JNI header
+         Generating JNI header
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt ..\..\..\src\main\c++\Context.cpp ..\..\..\src\main\c++\Poller.cpp ..\..\..\src\main\c++\Socket.cpp ..\..\..\src\main\c++\util.cpp ..\..\..\src\main\c++\ZMQ.cpp ..\..\..\src\main\c++\Curve.cpp ..\..\..\src\main\c++\Event.cpp
+         Context.cpp
+         Poller.cpp
+     1>..\..\..\src\main\c++\Poller.cpp(76): warning C4244: “=”: 从“jint”转换到“short”，可能丢失数据
+         Socket.cpp
+     1>..\..\..\src\main\c++\Socket.cpp(266): warning C4267: “参数”: 从“size_t”转换到“jsize”，可能丢失数据
+     1>..\..\..\src\main\c++\Socket.cpp(272): warning C4267: “参数”: 从“size_t”转换到“jsize”，可能丢失数据
+     1>..\..\..\src\main\c++\Socket.cpp(847): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\..\..\src\main\c++\Socket.cpp(875): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+         util.cpp
+         ZMQ.cpp
+         Curve.cpp
+         Event.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(D:\works\open\jzmq\jzmq20170423\jzmq-jni\builds\msvc\x64\Release\jzmq.dll) does not match the Linker's OutputFile property value (D:\works\open\jzmq\jzmq20170423\jzmq-jni\lib\jzmq.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"../../../lib/jzmq.dll" /NOLOGO libzmq.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\works\open\jzmq\jzmq20170423\jzmq-jni\builds\msvc\x64\Release\jzmq.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\works\open\jzmq\jzmq20170423\jzmq-jni\builds\msvc\x64\Release\jzmq.lib" /MACHINE:X64 /DLL x64\Release\Context.obj
+         x64\Release\Poller.obj
+         x64\Release\Socket.obj
+         x64\Release\util.obj
+         x64\Release\ZMQ.obj
+         x64\Release\Curve.obj
+         x64\Release\Event.obj
+            正在创建库 D:\works\open\jzmq\jzmq20170423\jzmq-jni\builds\msvc\x64\Release\jzmq.lib 和对象 D:\works\open\jzmq\jzmq20170423\jzmq-jni\builds\msvc\x64\Release\jzmq.exp
+         正在生成代码
+         已完成代码的生成
+         jzmq.vcxproj -> D:\works\open\jzmq\jzmq20170423\jzmq-jni\builds\msvc\x64\Release\jzmq.dll
+       PostBuildEvent:
+         cd ..\..\..\src\main\java
+         jar -cvf ..\..\..\lib\jzmq-jni-3.1.1.jar org\zeromq\*.class
+         
+         :VCEnd
+         已添加清单
+         正在添加: org/zeromq/App.class(输入 = 2432) (输出 = 1350)(压缩了 44%)
+         正在添加: org/zeromq/EmbeddedLibraryTools.class(输入 = 5216) (输出 = 2950)(压缩了 43%)
+         正在添加: org/zeromq/ZMQ$Context.class(输入 = 1323) (输出 = 742)(压缩了 43%)
+         正在添加: org/zeromq/ZMQ$Curve$KeyPair.class(输入 = 453) (输出 = 315)(压缩了 30%)
+         正在添加: org/zeromq/ZMQ$Curve.class(输入 = 459) (输出 = 305)(压缩了 33%)
+         正在添加: org/zeromq/ZMQ$Error.class(输入 = 2607) (输出 = 1465)(压缩了 43%)
+         正在添加: org/zeromq/ZMQ$Event.class(输入 = 1444) (输出 = 725)(压缩了 49%)
+         正在添加: org/zeromq/ZMQ$Poller.class(输入 = 4092) (输出 = 2004)(压缩了 51%)
+         正在添加: org/zeromq/ZMQ$PollItem.class(输入 = 1695) (输出 = 753)(压缩了 55%)
+         正在添加: org/zeromq/ZMQ$Socket.class(输入 = 13573) (输出 = 5171)(压缩了 61%)
+         正在添加: org/zeromq/ZMQ.class(输入 = 3614) (输出 = 1756)(压缩了 51%)
+         正在添加: org/zeromq/ZMQException.class(输入 = 953) (输出 = 561)(压缩了 41%)
+     1>已完成生成项目“D:\works\open\jzmq\jzmq20170423\jzmq-jni\builds\msvc\jzmq\jzmq.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.04

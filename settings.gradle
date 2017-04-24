@@ -1,0 +1,5 @@
+rootProject.name = 'jzmq20170423'
+
+include 'jzmq-core'
+
+include 'jzmq-devices'

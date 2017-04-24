@@ -1,0 +1,31 @@
+subprojects {
+    apply plugin: 'java'
+
+    def flatDirHome=System.getenv('WORK_HOME')
+
+    repositories {
+        flatDir {
+            // jzmq-jni
+            dirs "${flatDirHome}/open/jzmq/jzmq20170423/jzmq-jni/lib"
+
+            // Testing
+            dirs "${flatDirHome}/open/junit"
+
+            // project related
+            dirs "${flatDirHome}/space/flying/util/build/libs"
+            dirs "${flatDirHome}/space/flying/framework/build/libs"
+            dirs "${flatDirHome}/space/flying/monitor/build/libs"
+            dirs "${flatDirHome}/space/flying/common/build/libs"
+            dirs "${flatDirHome}/space/flying/ams/build/libs"
+            dirs "${flatDirHome}/space/flying/cms/build/libs"
+            dirs "${flatDirHome}/space/flying/oms/build/libs"
+            dirs "${flatDirHome}/space/flying/pos/build/libs"
+        }
+    }
+
+    compileJava {
+        options.compilerArgs = ["-Xlint:unchecked"]
+    }    
+}
+
+version = '3.1.1'
