@@ -76,8 +76,8 @@
     <LibraryPath>C:\ZeroMQ\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>D:\works\open\zeromq\zeromq4120170424\include;D:\soft\Java\jdk1.8.0_121\include;D:\soft\Java\jdk1.8.0_121\include\win32;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\works\open\zeromq\zeromq4120170424\bin\x64\Release\v120\dynamic;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\works\open\zeromq\zeromq-4.0.5\include;D:\soft\Java\jdk1.8.0_121\include;D:\soft\Java\jdk1.8.0_121\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\works\open\zeromq\zeromq-4.0.5\lib\x64;$(LibraryPath)</LibraryPath>
     <ExecutablePath>D:\soft\Java\jdk1.8.0_121\bin;$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH);</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
